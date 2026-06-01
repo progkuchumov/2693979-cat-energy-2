@@ -1,0 +1,21 @@
+.hero {
+  background-color: $base-decorative-bg-color;
+  text-align: center;
+}
+
+.hero__title {
+  font-family: $font-family-accent;
+  font-size: $font-size-hero-title;
+  font-weight: 400;
+  color: $base-decorative-text-color;
+  line-height: $line-height-hero-title;
+}
+
+.hero__subtitle {
+  font-family: $font-family-accent;
+  font-size: $font-size-hero-subtitle;
+  font-weight: 400;
+  color: $base-decorative-text-color;
+  line-height: $line-height-hero-subtitle;
+  text-transform: uppercase;
+}

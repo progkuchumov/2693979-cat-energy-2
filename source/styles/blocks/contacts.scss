@@ -1,0 +1,22 @@
+.contacts {
+  &--inner-page {
+    background-color: $bg-color-primary-accent;
+  }
+}
+
+.contacts__description {
+  font-family: $font-family-accent;
+  font-size: $font-size-contacts-description;
+  font-weight: 400;
+  color: $font-color-contacts-description;
+  line-height: $line-height-contacts;
+  text-transform: uppercase;
+}
+
+.contacts__address {
+  font-family: $font-family-primary;
+  font-size: $font-size-base;
+  font-weight: 400;
+  color: $font-color-base;
+  line-height: $line-height-contacts;
+}

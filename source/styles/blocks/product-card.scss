@@ -1,0 +1,36 @@
+.product-card {
+  &--add {
+    text-align: center;
+  }
+}
+
+.product-card__product-link,
+.product-card__show-more {
+  text-decoration: none;
+}
+
+.product-card__title,
+.product-card__accent {
+  font-family: $font-family-accent;
+  font-size: $font-size-product-card-title;
+  font-weight: 400;
+  line-height: $line-height-product-card-title;
+  text-transform: uppercase;
+}
+
+.product-card__title {
+  color: $font-color-product-card-title;
+}
+
+.product-card__parameters,
+.product-card__show-more {
+  font-family: $font-family-primary;
+  font-size: $font-size-product-card-parameters;
+  font-weight: 400;
+  color: $font-color-base;
+  line-height: $line-height-product-card-parameters;
+}
+
+.product-card__accent {
+  color: $font-color-product-card-accent;
+}

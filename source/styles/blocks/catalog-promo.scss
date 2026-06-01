@@ -1,0 +1,22 @@
+.catalog-promo__item {
+  background-color: $bg-color-primary-accent;
+}
+
+.catalog-promo__title {
+  font-family: $font-family-accent;
+  font-size: $font-size-catalog-promo-title;
+  font-weight: 400;
+  color: $font-color-accent;
+  line-height: $line-height-catalog-promo-title;
+  text-transform: uppercase;
+}
+
+.catalog-promo__link {
+  font-family: $font-family-accent;
+  font-size: $font-size-catalog-promo-link;
+  font-weight: 400;
+  color: $font-color-accent;
+  line-height: $line-height-catalog-promo-link;
+  text-decoration: none;
+  text-transform: uppercase;
+}

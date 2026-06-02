@@ -1,21 +1,22 @@
 .hero {
-  background-color: $base-decorative-bg-color;
+  background-color: $color-accent;
   text-align: center;
 }
 
-.hero__title {
+.hero__title,
+.hero__subtitle {
   font-family: $font-family-accent;
-  font-size: $font-size-hero-title;
   font-weight: 400;
-  color: $base-decorative-text-color;
-  line-height: $line-height-hero-title;
+  color: $color-white;
+}
+
+.hero__title {
+  font-size: $font-size-title;
+  line-height: $line-height-extra-large;
 }
 
 .hero__subtitle {
-  font-family: $font-family-accent;
-  font-size: $font-size-hero-subtitle;
-  font-weight: 400;
-  color: $base-decorative-text-color;
-  line-height: $line-height-hero-subtitle;
+  font-size: $font-size-base;
+  line-height: $line-height-extra-small;
   text-transform: uppercase;
 }

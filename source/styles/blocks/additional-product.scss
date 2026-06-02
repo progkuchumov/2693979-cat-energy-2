@@ -1,9 +1,9 @@
 .additional-product__title {
   font-family: $font-family-accent;
-  font-size: $font-size-additional-product-title;
+  font-size: $font-size-medium;
   font-weight: 400;
-  color: $font-color-additional-product-title;
-  line-height: $line-height-additional-product-title;
+  color: $color-dark-grey-2;
+  line-height: $line-height-small;
   text-transform: uppercase;
 }
 
@@ -11,6 +11,6 @@
   font-family: $font-family-primary;
   font-size: $font-size-base;
   font-weight: 400;
-  color: $font-color-base;
-  line-height: $line-height-additional-product-parameters;
+  color: $color-base;
+  line-height: $line-height-extra-small;
 }

@@ -2,24 +2,24 @@
   display: block;
   width: 100%;
   font-family: $font-family-accent;
-  font-size: $font-size-button;
+  font-size: $font-size-medium;
   font-weight: 400;
-  color: $base-decorative-text-color;
-  line-height: $line-height-button;
+  color: $color-white;
+  line-height: $line-height-medium;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-  background-color: $base-decorative-bg-color;
+  background-color: $color-accent;
   cursor: pointer;
   border: none;
 
   &--accent {
-    color: $font-color-base;
-    background-color: $bg-color-primary-accent;
+    color: $color-base;
+    background-color: $color-grey-1;
   }
 
   &--big {
-    font-size: 20px;
-    line-height: 26px;
+    font-size: $font-size-large;
+    line-height: $line-height-button-big;
   }
 }

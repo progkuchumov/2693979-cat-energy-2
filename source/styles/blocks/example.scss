@@ -1,21 +1,21 @@
 .example {
-  background-color: $bg-color-secondary-accent;
+  background-color: $color-grey-2;
+}
+
+.example__title,
+.example__expenses {
+  font-family: $font-family-accent;
+  font-weight: 400;
+  color: $color-black;
+  text-transform: uppercase;
 }
 
 .example__title {
-  font-family: $font-family-accent;
   font-size: $font-size-title;
-  font-weight: 400;
-  color: $font-color-accent;
   line-height: $line-height-title;
-  text-transform: uppercase;
 }
 
 .example__expenses {
-  font-family: $font-family-accent;
   font-size: $font-size-base;
-  font-weight: 400;
-  color: $font-color-accent;
-  line-height: $line-height-example-expenses;
-  text-transform: uppercase;
+  line-height: $line-height-medium;
 }

@@ -1,0 +1,12 @@
+.promo {
+  background-color: $base-decorative-bg-color;
+  text-align: center;
+}
+
+.promo__text {
+  font-family: $font-family-primary;
+  font-size: $font-size-promo-text;
+  font-weight: 400;
+  color: $base-decorative-text-color;
+  line-height: $line-height-promo-text;
+}

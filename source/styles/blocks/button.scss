@@ -1,0 +1,25 @@
+.button {
+  display: block;
+  width: 100%;
+  font-family: $font-family-accent;
+  font-size: $font-size-button;
+  font-weight: 400;
+  color: $base-decorative-text-color;
+  line-height: $line-height-button;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: $base-decorative-bg-color;
+  cursor: pointer;
+  border: none;
+
+  &--accent {
+    color: $font-color-base;
+    background-color: $bg-color-primary-accent;
+  }
+
+  &--big {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}

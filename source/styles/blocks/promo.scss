@@ -1,6 +1,11 @@
 .promo {
-  background-color: $color-accent;
   text-align: center;
+
+  /* добавить "отзывчивый" фон */
+  background:
+    linear-gradient($color-bg-accent, $color-bg-accent),
+    url("../../images/promo-bg-mobile@1x.jpg")
+    top center no-repeat;
 }
 
 .promo__text {
@@ -9,4 +14,15 @@
   font-weight: 400;
   color: $color-white;
   line-height: $line-height-medium;
+}
+
+.promo__text::before {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 80px;
+
+  background-image: url("../../icons/stack.svg#promo-gift");
+  background-repeat: no-repeat;
+  background-position: center center;
 }

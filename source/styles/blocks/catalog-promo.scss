@@ -13,10 +13,48 @@
 .catalog-promo__title {
   font-size: $font-size-extra-large;
   line-height: $line-height-extra-large;
+
+  &::before {
+    content: "";
+    display: block;
+  }
+
+  &--primary::before {
+    width: 50px;
+    height: 53px;
+    background: url("../../icons/stack.svg#promo-primary") no-repeat;
+  }
+
+  &--secondary::before {
+    width: 67px;
+    height: 50px;
+    background: url("../../icons/stack.svg#promo-secondary") no-repeat;
+  }
 }
 
 .catalog-promo__link {
   font-size: $font-size-medium;
   line-height: $line-height-small;
   text-decoration: none;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 10px;
+    mask-image: url("../../icons/stack.svg#arrow-right");
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    mask-position: -12px 0;
+    background-color: $color-black;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    mask-position: 0 0;
+  }
+
+  &:active {
+    opacity: $opacity-active;
+  }
 }

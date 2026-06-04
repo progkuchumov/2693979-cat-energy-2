@@ -46,18 +46,16 @@
     </nav>
   </header>
   <main class="main">
-    <section class="hero">
-      <div class="page__container">
-        <h1 class="hero__title">Функциональное питание для котов</h1>
-        <p class="hero__subtitle">Занялся собой? Займись котом!</p>
-        <picture>
-          <source media="(min-width: 1440px)" width="552" height="499" type="image/png" srcset="images/hero-image-desktop@1x.png 1x, images/hero-image-desktop@2x.png 2x">
-          <source media="(min-width: 768px)" width="709" height="609" type="image/png" srcset="images/hero-image-tablet@1x.png 1x, images/hero-image-tablet@2x.png 2x">
-          <img class="hero__image" src="images/hero-image-mobile@1x.png" srcset="images/hero-image-mobile@2x.png 2x" width="280" height="270" alt="Cat Energy pro со вкусом курицы">
-        </picture>
+    <section class="hero page__container">
+      <h1 class="hero__title">Функциональное питание для котов</h1>
+      <p class="hero__subtitle">Занялся собой? Займись котом!</p>
+      <picture>
+        <source media="(min-width: 1440px)" width="552" height="499" type="image/png" srcset="images/hero-image-desktop@1x.png 1x, images/hero-image-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" width="709" height="609" type="image/png" srcset="images/hero-image-tablet@1x.png 1x, images/hero-image-tablet@2x.png 2x">
+        <img class="hero__image" src="images/hero-image-mobile@1x.png" srcset="images/hero-image-mobile@2x.png 2x" width="280" height="270" alt="Cat Energy pro со вкусом курицы">
+      </picture>
 
-        <a class="hero__button button" href="choose.html">Подобрать программу</a>
-      </div>
+      <a class="hero__button button" href="choose.html">Подобрать программу</a>
     </section>
     <section class="catalog-promo page__container">
       <h2 class="visually-hidden">Подбор программ в зависимости от цели</h2>
@@ -139,7 +137,7 @@
   <footer class="footer">
     <div class="page__container">
       <a class="footer__logo" href="index.html">
-        <img src="images/footer-logo.svg" width="128" height="24" alt="Cat energy">
+        <span class="visually-hidden">Ссылка на Cat Energy</span>
       </a>
       <ul class="footer__social social list-reset">
         <li class="social__item">
@@ -159,10 +157,7 @@
         </li>
       </ul>
       <a class="footer__html-academy" href="https://htmlacademy.ru/intensive/adaptive">
-        <picture>
-          <source media="(min-width: 768px)" width="168" height="37" type="image/svg+xml" srcset="images/html-academy-logo-tablet-desktop.svg">
-          <img src="images/html-academy-logo-mobile.svg" width="280" height="34" alt="HTML Academy">
-        </picture>
+        HTML Academy
       </a>
     </div>
   </footer>

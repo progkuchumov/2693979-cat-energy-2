@@ -1,3 +1,23 @@
+.main-navigation__toggle {
+  width: 24px;
+  height: 24px;
+  mask-image: url("../../icons/stack.svg#toggle");
+  mask-size: cover;
+  mask-repeat: no-repeat;
+  background-color: $color-black;
+  border: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $color-accent;
+  }
+
+  &:active {
+    opacity: $opacity-active;
+  }
+}
+
 .main-navigation__link {
   font-family: $font-family-accent;
   font-size: $font-size-large;

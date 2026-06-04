@@ -31,6 +31,18 @@
   line-height: $line-height-small;
 }
 
+.product-card__show-more::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+
+  mask-image: url("../../icons/stack.svg#plus");
+  mask-size: cover;
+  mask-repeat: no-repeat;
+  background-color: $color-grey-4;
+}
+
 .product-card__accent {
   color: $color-dark-grey-1;
 }

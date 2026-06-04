@@ -1,3 +1,56 @@
 .footer {
   background-color: $color-grey-1;
 }
+
+.footer__logo {
+  display: block;
+  width: 128px;
+  height: 24px;
+
+  mask-image: url("../../images/footer-logo.svg");
+  mask-size: cover;
+  mask-repeat: no-repeat;
+  background-color: $color-dark-grey-1;
+
+  &:hover,
+  &:focus {
+    background-color: $color-dark-grey-3;
+  }
+
+  &:active {
+    background-color: $color-dark-grey-4;
+  }
+}
+
+.footer__html-academy {
+  font-family: $font-family-primary;
+  font-size: $font-size-medium;
+  line-height: $line-height-medium;
+  color: $color-base;
+  text-decoration: none;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 27px;
+    height: 34px;
+
+    mask-image: url("../../icons/stack.svg#html-academy-logo");
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    background-color: $color-base;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    background-color: $color-accent;
+  }
+
+  &:active {
+    opacity: $opacity-active;
+  }
+}

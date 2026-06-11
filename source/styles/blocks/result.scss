@@ -1,15 +1,15 @@
 .result {
   font-family: $font-family-primary;
-  font-size: $font-size-result;
+  font-size: $font-size-small;
   font-weight: 400;
-  color: $font-color-base;
+  color: $color-base;
   line-height: $line-height-result;
 }
 
 .result__accent {
   font-family: $font-family-accent;
-  font-size: $font-size-result-accent;
+  font-size: $font-size-extra-large;
   font-weight: 400;
-  color: $font-color-accent;
-  line-height: $line-height-result-accent;
+  color: $color-black;
+  line-height: $line-height-large;
 }

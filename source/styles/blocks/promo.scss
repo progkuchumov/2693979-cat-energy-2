@@ -1,12 +1,28 @@
 .promo {
-  background-color: $base-decorative-bg-color;
   text-align: center;
+
+  /* добавить "отзывчивый" фон */
+  background:
+    linear-gradient($color-bg-accent, $color-bg-accent),
+    url("../../images/promo-bg-mobile@1x.jpg")
+    top center no-repeat;
 }
 
 .promo__text {
   font-family: $font-family-primary;
-  font-size: $font-size-promo-text;
+  font-size: $font-size-medium;
   font-weight: 400;
-  color: $base-decorative-text-color;
-  line-height: $line-height-promo-text;
+  color: $color-white;
+  line-height: $line-height-medium;
+}
+
+.promo__text::before {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 80px;
+
+  background-image: url("../../icons/stack.svg#promo-gift");
+  background-repeat: no-repeat;
+  background-position: center center;
 }

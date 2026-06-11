@@ -1,3 +1,7 @@
-.slider {
-  margin: 0;
+.slider__button {
+  width: 40px;
+  height: 40px;
+  background-image: url("../../icons/stack.svg#slider-button");
+  border: none;
+  cursor: pointer;
 }

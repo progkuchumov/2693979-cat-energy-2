@@ -1,22 +1,60 @@
 .catalog-promo__item {
-  background-color: $bg-color-primary-accent;
+  background-color: $color-grey-1;
+}
+
+.catalog-promo__title,
+.catalog-promo__link {
+  font-family: $font-family-accent;
+  font-weight: 400;
+  color: $color-black;
+  text-transform: uppercase;
 }
 
 .catalog-promo__title {
-  font-family: $font-family-accent;
-  font-size: $font-size-catalog-promo-title;
-  font-weight: 400;
-  color: $font-color-accent;
-  line-height: $line-height-catalog-promo-title;
-  text-transform: uppercase;
+  font-size: $font-size-extra-large;
+  line-height: $line-height-extra-large;
+
+  &::before {
+    content: "";
+    display: block;
+  }
+
+  &--primary::before {
+    width: 50px;
+    height: 53px;
+    background: url("../../icons/stack.svg#promo-primary") no-repeat;
+  }
+
+  &--secondary::before {
+    width: 67px;
+    height: 50px;
+    background: url("../../icons/stack.svg#promo-secondary") no-repeat;
+  }
 }
 
 .catalog-promo__link {
-  font-family: $font-family-accent;
-  font-size: $font-size-catalog-promo-link;
-  font-weight: 400;
-  color: $font-color-accent;
-  line-height: $line-height-catalog-promo-link;
+  font-size: $font-size-medium;
+  line-height: $line-height-small;
   text-decoration: none;
-  text-transform: uppercase;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 10px;
+    mask-image: url("../../icons/stack.svg#arrow-right");
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    mask-position: -12px 0;
+    background-color: $color-black;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    mask-position: 0 0;
+  }
+
+  &:active {
+    opacity: $opacity-active;
+  }
 }

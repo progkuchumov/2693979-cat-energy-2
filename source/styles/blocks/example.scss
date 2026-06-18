@@ -1,4 +1,6 @@
 .example {
+  padding-top: 25px;
+  padding-bottom: 40px;
   background-color: $color-grey-2;
 }
 
@@ -11,6 +13,8 @@
 }
 
 .example__title {
+  margin-top: 0;
+  margin-bottom: 40px;
   font-size: $font-size-title;
   line-height: $line-height-title;
 }
@@ -18,4 +22,5 @@
 .example__expenses {
   font-size: $font-size-base;
   line-height: $line-height-medium;
+  text-align: center;
 }

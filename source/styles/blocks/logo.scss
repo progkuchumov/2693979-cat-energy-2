@@ -1,3 +1,20 @@
 .logo {
   display: block;
+  width: 190px;
+  height: 38px;
+
+  background-image: url("../../images/logo-text.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 101px 18px;
+
+  @media (min-width: $max-width-tablet) {
+    width: 174px;
+    height: 50px;
+  }
+
+  @media (min-width: $max-width-desktop) {
+    width: 202px;
+    height: 59px;
+  }
 }

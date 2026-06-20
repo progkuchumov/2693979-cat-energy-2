@@ -1,6 +1,12 @@
 .hero {
   position: relative;
+  padding-top: 27px;
+  padding-bottom: 20px;
   text-align: center;
+
+  @media (min-width: $max-width-tablet) {
+    text-align: left;
+  }
 
   &::before {
     content: "";
@@ -15,23 +21,63 @@
       url("../../images/hero-bg-mobile@1x.jpg")
       top center no-repeat;
     z-index: -1;
+
+    @media (min-width: $max-width-tablet) {
+      display: none;
+    }
   }
 }
 
 .hero__title,
 .hero__subtitle {
+  margin-top: 0;
   font-family: $font-family-accent;
   font-weight: 400;
   color: $color-white;
+
+  @media (min-width: $max-width-tablet) {
+    margin-left: 90px;
+    color: $color-black;
+  }
 }
 
 .hero__title {
+  margin-bottom: 25px;
   font-size: $font-size-title;
   line-height: $line-height-extra-large;
+
+  @media (min-width: $max-width-tablet) {
+    margin-bottom: 40px;
+    max-width: 420px;
+    font-size: $font-size-tablet-extra-large;
+    line-height: $line-height-tablet-extra-large;
+  }
 }
 
 .hero__subtitle {
+  margin-bottom: 29px;
   font-size: $font-size-base;
   line-height: $line-height-extra-small;
   text-transform: uppercase;
+
+  @media (min-width: $max-width-tablet) {
+    font-size: $font-size-large;
+    line-height: $line-height-medium;
+  }
+}
+
+.hero__button {
+  @media (min-width: $max-width-tablet) and (max-width: calc($max-width-desktop - 1px)) {
+    position: absolute;
+    left: 120px;
+    bottom: 560px;
+  }
+
+  @media (min-width: $max-width-tablet) {
+    display: inline-block;
+    padding: 14px 26px;
+    width: auto;
+    font-size: $font-size-large;
+    line-height: $line-height-button-big;
+  }
 }

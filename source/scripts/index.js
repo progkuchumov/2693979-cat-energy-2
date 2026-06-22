@@ -8,7 +8,9 @@ buttonOpen.onclick = function() {
 
 const slider = document.querySelector('.slider');
 const before = slider.querySelector('.slider__slide--before');
-const beforeImage = before.querySelector('.slider__image');
+const after = slider.querySelector('.slider__slide--after');
+const beforeImage = before.querySelector('.slider__image--before');
+const afterImage = after.querySelector('.slider__image--after');
 const change = slider.querySelector('.slider__change');
 const body = document.body;
 
@@ -17,11 +19,13 @@ let isActive = false;
 document.addEventListener('DOMContentLoaded', () => {
   const width = slider.offsetWidth;
   beforeImage.style.width = `${width}px`;
+  afterImage.style.width = `${width}px`;
 });
 
 const beforeAfterSlider = (x) => {
   const shift = Math.max(0, Math.min(x, slider.offsetWidth));
   before.style.width = `${shift}px`;
+  after.style.width = `${slider.offsetWidth - shift}px`;
   change.style.left = `${shift}px`;
 };
 

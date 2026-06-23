@@ -3,13 +3,17 @@
   width: 280px;
   height: 256px;
   overflow: hidden;
+
+  @media (min-width: $max-width-tablet) {
+    width: 560px;
+    height: 512px;
+  }
 }
 
 .slider__slide {
   position: absolute;
   top: 0;
   height: 100%;
-  background-color: $color-grey-2;
   overflow: hidden;
 }
 
@@ -21,6 +25,7 @@
 
 .slider__slide--after {
   right: 0;
+  width: 50%;
 }
 
 .slider__image {
@@ -29,6 +34,11 @@
   max-width: none;
   height: 100%;
   object-fit: cover;
+}
+
+.slider__image--after {
+  position: absolute;
+  right: 0;
 }
 
 .slider__change {

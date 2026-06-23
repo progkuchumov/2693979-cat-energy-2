@@ -1,10 +1,19 @@
 .hero {
   position: relative;
   padding-top: 27px;
-  padding-bottom: 20px;
+  padding-bottom: 22px;
   text-align: center;
 
   @media (min-width: $max-width-tablet) {
+    display: grid;
+    grid-template-areas:
+      "title"
+      "subtitle"
+      "button"
+      "image";
+    margin-bottom: 3px;
+    padding-top: 40px;
+    padding-bottom: 0;
     text-align: left;
   }
 
@@ -47,6 +56,7 @@
   line-height: $line-height-extra-large;
 
   @media (min-width: $max-width-tablet) {
+    grid-area: title;
     margin-bottom: 40px;
     max-width: 420px;
     font-size: $font-size-tablet-extra-large;
@@ -55,29 +65,37 @@
 }
 
 .hero__subtitle {
-  margin-bottom: 29px;
+  margin-bottom: 30px;
   font-size: $font-size-base;
   line-height: $line-height-extra-small;
   text-transform: uppercase;
 
   @media (min-width: $max-width-tablet) {
+    grid-area: subtitle;
+    margin-bottom: 50px;
     font-size: $font-size-large;
     line-height: $line-height-medium;
   }
 }
 
 .hero__button {
-  @media (min-width: $max-width-tablet) and (max-width: calc($max-width-desktop - 1px)) {
-    position: absolute;
-    left: 120px;
-    bottom: 560px;
-  }
-
   @media (min-width: $max-width-tablet) {
+    grid-area: button;
+    justify-self: start;
     display: inline-block;
-    padding: 14px 26px;
+    margin-left: 90px;
+    padding: 14px 28px;
     width: auto;
     font-size: $font-size-large;
     line-height: $line-height-button-big;
+  }
+}
+
+.hero__image {
+  display: block;
+
+  @media (min-width: $max-width-tablet) {
+    grid-area: image;
+    margin-top: -84px;
   }
 }

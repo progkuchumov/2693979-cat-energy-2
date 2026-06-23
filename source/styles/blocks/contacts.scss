@@ -9,12 +9,11 @@
 .contacts__block {
   display: flex;
   justify-content: space-between;
-  padding-top: 26px;
+  padding-top: 27px;
   padding-bottom: 26px;
 
   @media (min-width: $max-width-tablet) {
-    padding-top: 61px;
-    padding-bottom: 61px;
+    padding: 61px 40px;
   }
 }
 

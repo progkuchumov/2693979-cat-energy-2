@@ -238,14 +238,25 @@
     <section class="contacts contacts--inner-page">
       <div class="page__container">
         <h2 class="visually-hidden">Контакты</h2>
-        <p class="contacts__description">Приглашаем к сотрудничеству дилеров!</p>
-        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        <div class="contacts__block">
+          <p class="contacts__description">Приглашаем<br> к сотрудничеству дилеров!</p>
+          <address class="contacts__address">
+            <span class="contacts__address-item">ул. Большая Конюшенная, д. 19/8</span>
+            <span class="contacts__address-item">Санкт-Петербург</span>
+          </address>
+        </div>
       </div>
-      <div class="contacts__map"></div>
+      <div class="contacts__map">
+        <picture>
+          <source media="(min-width: 1440px)" width="1440" height="400" type="image/jpeg" srcset="images/map-desktop@1x.jpg 1x, images/map-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" width="768" height="400" type="image/jpeg" srcset="images/map-tablet@1x.jpg 1x, images/map-tablet@2x.jpg 2x">
+          <img class="contacts__map-images" src="images/map-mobile@1x.jpg" srcset="images/map-mobile@2x.jpg 2x" width="320" height="362" alt="Карта расположения Cat Energy">
+        </picture>
+      </div>
     </section>
   </main>
   <footer class="footer">
-    <div class="page__container">
+    <div class="footer__container page__container">
       <a class="footer__logo" href="index.html">
         <span class="visually-hidden">Ссылка на Cat Energy</span>
       </a>

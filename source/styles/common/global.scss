@@ -36,28 +36,18 @@ img {
   list-style: none;
 }
 
-.title {
+.title,
+.title-accent {
   margin-top: 0;
   font-family: $font-family-accent;
   font-weight: 400;
 }
 
-.title--accent {
+.title-accent {
   position: relative;
 }
 
-.title--accent__container {
-  padding-left: 20px;
-  padding-right: 40px;
-  background-color: $color-white;
-
-  @media (min-width: $max-width-tablet) {
-    margin-left: 30px;
-    padding-left: 40px;
-  }
-}
-
-.title--accent::after {
+.title-accent::after {
   content: "";
   position: absolute;
   left: 0;
@@ -67,4 +57,15 @@ img {
   height: 2px;
   background-color: $color-accent;
   z-index: -1;
+}
+
+.title-accent__container {
+  padding-left: 20px;
+  padding-right: 40px;
+  background-color: $color-white;
+
+  @media (min-width: $max-width-tablet) {
+    margin-left: 30px;
+    padding-left: 40px;
+  }
 }

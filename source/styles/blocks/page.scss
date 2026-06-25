@@ -27,7 +27,7 @@
 }
 
 .page__container-padding,
-.page__container-padding--catalog {
+.page__container-padding-catalog {
   @media (min-width: $max-width-tablet) {
     padding: $container-padding-tablet;
   }

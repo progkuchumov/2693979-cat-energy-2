@@ -1,4 +1,6 @@
 .promo {
+  padding: 58px 58px 43px;
+  min-height: 290px;
   text-align: center;
 
   /* добавить "отзывчивый" фон */
@@ -6,23 +8,48 @@
     linear-gradient($color-bg-accent, $color-bg-accent),
     url("../../images/promo-bg-mobile@1x.jpg")
     top center no-repeat;
+  background-size: cover;
+
+  @media (min-width: $max-width-tablet) {
+    display: flex;
+    align-items: center;
+    padding: 57px 125px 60px 77px;
+    min-height: 200px;
+    text-align: left;
+    background:
+      linear-gradient($color-bg-accent, $color-bg-accent),
+      url("../../images/promo-bg-tablet@1x.jpg")
+      top center no-repeat;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    margin: 0 auto 48px;
+    width: 80px;
+    height: 80px;
+
+    background-image: url("../../icons/stack.svg#promo-gift");
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    @media (min-width: $max-width-tablet) {
+      position: absolute;
+      margin: 0;
+    }
+  }
 }
 
 .promo__text {
+  margin: 0;
   font-family: $font-family-primary;
   font-size: $font-size-medium;
   font-weight: 400;
   color: $color-white;
   line-height: $line-height-medium;
-}
 
-.promo__text::before {
-  content: "";
-  display: block;
-  width: 80px;
-  height: 80px;
-
-  background-image: url("../../icons/stack.svg#promo-gift");
-  background-repeat: no-repeat;
-  background-position: center center;
+  @media (min-width: $max-width-tablet) {
+    margin-left: auto;
+    width: 165px;
+  }
 }

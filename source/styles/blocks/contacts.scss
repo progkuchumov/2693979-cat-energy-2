@@ -4,6 +4,10 @@
   &--inner-page {
     background-color: $color-grey-1;
   }
+
+  @media (min-width: $max-width-desktop) {
+    position: relative;
+  }
 }
 
 .contacts__block {
@@ -14,6 +18,14 @@
 
   @media (min-width: $max-width-tablet) {
     padding: 61px 40px;
+  }
+
+  @media (min-width: $max-width-desktop) {
+    position: absolute;
+    top: 95px;
+    padding: 60px 80px;
+    width: 564px;
+    background-color: $color-white;
   }
 }
 
@@ -52,6 +64,12 @@
     width: 160px;
     font-size: $font-size-medium;
     text-align: right;
+  }
+
+  @media (min-width: $max-width-desktop) {
+    padding-left: 45px;
+    width: 50%;
+    text-align: left;
   }
 }
 

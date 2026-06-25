@@ -1,89 +1,21 @@
-const buttonOpen = document.getElementById('js-button-open');
-const menuOpen = document.getElementById('js-menu-open');
+const buttonOpen = document.querySelector('.main-navigation__toggle');
+const menuOpen = document.querySelector('.main-navigation__list');
+
+if (document.querySelector('.slider')) {
+  const slider = document.querySelector('.slider');
+  const range = document.querySelector('.slider__range');
+
+  range.addEventListener('input', () => {
+    slider.style.setProperty('--value', `${range.value }%`);
+  });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  buttonOpen.classList.add('main-navigation__toggle--open');
+  menuOpen.classList.add('main-navigation__list--close');
+});
 
 buttonOpen.onclick = function() {
   buttonOpen.classList.toggle('main-navigation__toggle--open');
-  menuOpen.classList.toggle('main-navigation__list--open');
+  menuOpen.classList.toggle('main-navigation__list--close');
 };
-
-const slider = document.querySelector('.slider');
-const before = slider.querySelector('.slider__slide--before');
-const after = slider.querySelector('.slider__slide--after');
-const beforeImage = before.querySelector('.slider__image--before');
-const afterImage = after.querySelector('.slider__image--after');
-const change = slider.querySelector('.slider__change');
-const body = document.body;
-
-let isActive = false;
-
-document.addEventListener('DOMContentLoaded', () => {
-  const width = slider.offsetWidth;
-  beforeImage.style.width = `${width}px`;
-  afterImage.style.width = `${width}px`;
-});
-
-const beforeAfterSlider = (x) => {
-  const shift = Math.max(0, Math.min(x, slider.offsetWidth));
-  before.style.width = `${shift}px`;
-  after.style.width = `${slider.offsetWidth - shift}px`;
-  change.style.left = `${shift}px`;
-};
-
-const pauseEvents = (e) => {
-  e.stopPropagation();
-  e.preventDefault();
-  return false;
-};
-
-body.addEventListener('mousedown', () => {
-  isActive = true;
-});
-
-body.addEventListener('mouseup', () => {
-  isActive = false;
-});
-
-body.addEventListener('mouseleave', () => {
-  isActive = false;
-});
-
-body.addEventListener('mousemove', (e) => {
-  if (!isActive) {
-    return;
-  }
-
-  let x = e.pageX;
-
-  x -= slider.getBoundingClientRect().left;
-  beforeAfterSlider(x);
-  pauseEvents(e);
-});
-
-body.addEventListener('touchstart', () => {
-  isActive = true;
-});
-
-body.addEventListener('touchend', () => {
-  isActive = false;
-});
-
-body.addEventListener('touchcancel', () => {
-  isActive = false;
-});
-
-body.addEventListener('touchmove', (e) => {
-  if (!isActive) {
-    return false;
-  }
-
-  let x;
-  let i;
-
-  for (i = 0; i < e.changedTouches.length; i++) {
-    x = e.changedTouches[i].pageX;
-  }
-
-  x -= slider.getBoundingClientRect().left;
-  beforeAfterSlider(x);
-  pauseEvents(e);
-}, { passive: false });

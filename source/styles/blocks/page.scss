@@ -11,17 +11,29 @@
 
 .page__container {
   margin: 0 auto;
-  padding: $container-padding-mobile;
   width: $max-width-mobile;
 
   @media (min-width: $max-width-tablet) {
-    padding: $container-padding-tablet;
     width: $max-width-tablet;
   }
 
   @media (min-width: $max-width-desktop) {
-    padding: $container-padding-desktop;
     width: $max-width-desktop;
+  }
+}
+
+.page__container-padding {
+  padding: $container-padding-mobile;
+}
+
+.page__container-padding,
+.page__container-padding--catalog {
+  @media (min-width: $max-width-tablet) {
+    padding: $container-padding-tablet;
+  }
+
+  @media (min-width: $max-width-desktop) {
+    padding: $container-padding-desktop;
   }
 }
 

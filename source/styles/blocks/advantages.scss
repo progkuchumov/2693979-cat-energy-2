@@ -5,14 +5,16 @@
     padding-top: 13px;
     padding-bottom: 60px;
   }
+
+  @media (min-width: $max-width-desktop) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 .advantages__title {
-  margin-top: 0;
   margin-bottom: 40px;
-  font-family: $font-family-accent;
   font-size: $font-size-title;
-  font-weight: 400;
   color: $color-black;
   line-height: $line-height-title;
 
@@ -31,6 +33,10 @@
   @media (min-width: $max-width-tablet) {
     gap: 90px 135px;
     counter-reset: item;
+  }
+
+  @media (min-width: $max-width-desktop) {
+    gap: 94px;
   }
 }
 
@@ -92,5 +98,10 @@
       line-height: $line-height-mega-large;
       color: $color-grey-1;
     }
+  }
+
+  @media (min-width: $max-width-desktop) {
+    width: 230px;
+    min-height: 280px;
   }
 }

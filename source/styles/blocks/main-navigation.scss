@@ -1,8 +1,27 @@
+.main-navigation--index {
+  @media (min-width: $max-width-desktop) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 694px;
+      z-index: -1;
+      /* добавить "отзывчивый" фон */
+      background:
+        linear-gradient($color-bg-accent, $color-bg-accent),
+        url("../../images/hero-bg-desktop@1x.jpg")
+        top center no-repeat;
+    }
+  }
+}
+
 .main-navigation__toggle {
-  margin-top: 5px;
-  width: 24px;
-  height: 24px;
-  mask-image: url("../../icons/stack.svg#toggle");
+  margin-top: 3px;
+  width: 18px;
+  height: 18px;
+  mask-image: url("../../icons/stack.svg#toggle-open");
   mask-size: cover;
   mask-repeat: no-repeat;
   background-color: $color-black;
@@ -24,21 +43,23 @@
 }
 
 .main-navigation__toggle--open {
-  margin-top: 3px;
-  width: 18px;
-  height: 18px;
-  mask-image: url("../../icons/stack.svg#toggle-open");
+  margin-top: 5px;
+  width: 24px;
+  height: 24px;
+  mask-image: url("../../icons/stack.svg#toggle");
 }
 
 .main-navigation__list {
   position: absolute;
   left: 0;
-  display: none;
   margin-top: 20px;
   width: 100%;
   text-align: center;
-  background-color: $color-white;
   z-index: 5;
+
+  @media (max-width: calc($max-width-tablet - 1px)) {
+    background-color: $color-white;
+  }
 
   @media (min-width: $max-width-tablet) {
     position: static;
@@ -48,10 +69,16 @@
     margin-top: 0;
     margin-right: 5px;
   }
+
+  @media (min-width: $max-width-desktop) {
+    margin-right: 0;
+  }
 }
 
-.main-navigation__list--open {
-  display: block;
+.main-navigation__list--close {
+  @media (max-width: calc($max-width-tablet - 1px)) {
+    display: none;
+  }
 }
 
 .main-navigation__item {
@@ -79,5 +106,15 @@
     padding-bottom: 0;
     font-size: $font-size-tablet-large;
     line-height: $line-height-large;
+  }
+
+  @media (min-width: $max-width-desktop) {
+    font-size: $font-size-large;
+  }
+}
+
+.main-navigation--index .main-navigation__link {
+  @media (min-width: $max-width-desktop) {
+    color: $color-white;
   }
 }

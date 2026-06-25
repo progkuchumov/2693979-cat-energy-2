@@ -7,6 +7,11 @@
     padding-top: 55px;
     padding-bottom: 55px;
   }
+
+  @media (min-width: $max-width-desktop) {
+    padding-top: 68px;
+    padding-bottom: 68px;
+  }
 }
 
 .footer__container {
@@ -25,6 +30,7 @@
 
   @media (min-width: $max-width-tablet) {
     margin-bottom: 0;
+    margin-left: 40px;
   }
 }
 

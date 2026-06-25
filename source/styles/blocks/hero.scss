@@ -1,7 +1,7 @@
 .hero {
   position: relative;
   padding-top: 27px;
-  padding-bottom: 22px;
+  padding-bottom: 20px;
   text-align: center;
 
   @media (min-width: $max-width-tablet) {
@@ -15,6 +15,17 @@
     padding-top: 40px;
     padding-bottom: 0;
     text-align: left;
+  }
+
+  @media (min-width: $max-width-desktop) {
+    grid-template-areas:
+      "title    image"
+      "subtitle image"
+      "button   image"
+      ".        image";
+    align-items: start;
+    margin-bottom: 135px;
+    padding-top: 85px;
   }
 
   &::before {
@@ -39,14 +50,15 @@
 
 .hero__title,
 .hero__subtitle {
-  margin-top: 0;
-  font-family: $font-family-accent;
-  font-weight: 400;
   color: $color-white;
 
   @media (min-width: $max-width-tablet) {
     margin-left: 90px;
     color: $color-black;
+  }
+
+  @media (min-width: $max-width-desktop) {
+    margin-left: 80px;
   }
 }
 
@@ -89,6 +101,10 @@
     font-size: $font-size-large;
     line-height: $line-height-button-big;
   }
+
+  @media (min-width: $max-width-desktop) {
+    margin-left: 80px;
+  }
 }
 
 .hero__image {
@@ -97,5 +113,9 @@
   @media (min-width: $max-width-tablet) {
     grid-area: image;
     margin-top: -84px;
+  }
+
+  @media (min-width: $max-width-desktop) {
+    margin-left: -270px;
   }
 }

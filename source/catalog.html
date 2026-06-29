@@ -14,7 +14,7 @@
 </head>
 
 <body class="page__body">
-  <header class="header page__container">
+  <header class="header page__container" data-test="header">
     <a class="logo" href="index.html">
       <picture>
         <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-desktop.svg">
@@ -47,7 +47,7 @@
     </nav>
   </header>
   <main class="page__main">
-    <section class="catalog page__container">
+    <section class="catalog page__container" data-test="catalog">
       <h1 class="catalog__title title">Каталог продукции</h1>
       <ul class="catalog__list list-reset">
         <li class="catalog__item product-card">
@@ -200,7 +200,7 @@
         </li>
       </ul>
     </section>
-    <section class="additional-catalog page__container">
+    <section class="additional-catalog page__container" data-test="additional">
       <h2 class="additional-catalog__title title-accent">
         Дополнительные товары
       </h2>
@@ -255,7 +255,7 @@
         </form>
       </div>
     </section>
-    <section class="contacts contacts--inner-page">
+    <section class="contacts contacts--inner-page" data-test="contacts">
       <div class="page__container">
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__block">
@@ -273,7 +273,7 @@
       </div>
     </section>
   </main>
-  <footer class="footer">
+  <footer class="footer" data-test="footer">
     <div class="footer__container page__container">
       <a class="footer__logo" href="index.html">
         <span class="visually-hidden">Ссылка на Cat Energy</span>

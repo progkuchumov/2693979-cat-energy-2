@@ -14,7 +14,7 @@
 </head>
 
 <body class="page__body">
-  <header class="header page__container">
+  <header class="header page__container" data-test="header">
     <a class="header__logo logo" href="index.html">
       <picture>
         <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-desktop.svg">
@@ -47,7 +47,7 @@
     </nav>
   </header>
   <main class="page__main">
-    <section class="hero">
+    <section class="hero" data-test="hero">
       <div class="hero__container page__container">
         <h1 class="hero__title title">Функциональное питание для котов</h1>
         <p class="hero__subtitle title">Занялся собой? Займись котом!</p>
@@ -62,7 +62,7 @@
         <a class="hero__button button" href="choose.html">Подобрать программу</a>
       </div>
     </section>
-    <section class="catalog-promo page__container">
+    <section class="catalog-promo page__container" data-test="programs">
       <h2 class="visually-hidden">Подбор программ в зависимости от цели</h2>
       <ul class="catalog-promo__list list-reset">
         <li class="catalog-promo__item catalog-promo__item--primary">
@@ -81,7 +81,7 @@
         </li>
       </ul>
     </section>
-    <section class="advantages page__container">
+    <section class="advantages page__container" data-test="features">
       <h2 class="advantages__title title">Как это работает</h2>
       <ul class="advantages__list list-reset">
         <li class="advantages__item advantages__item--first">
@@ -99,7 +99,7 @@
       </ul>
     </section>
     <section class="example">
-      <div class="example__container page__container">
+      <div class="example__container page__container" data-test="proof">
         <div class="example__text-block">
           <h2 class="example__title title">Живой пример</h2>
           <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
@@ -133,7 +133,7 @@
         </div>
       </div>
     </section>
-    <section class="contacts">
+    <section class="contacts" data-test="contacts">
       <div class="page__container">
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__block">
@@ -149,7 +149,7 @@
       </div>
     </section>
   </main>
-  <footer class="footer">
+  <footer class="footer" data-test="footer">
     <div class="footer__container page__container">
       <a class="footer__logo" href="index.html">
         <span class="visually-hidden">Ссылка на Cat Energy</span>

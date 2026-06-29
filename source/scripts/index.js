@@ -1,3 +1,4 @@
+const menu = document.querySelector('.main-navigation');
 const buttonOpen = document.querySelector('.main-navigation__toggle');
 const menuOpen = document.querySelector('.main-navigation__list');
 
@@ -11,7 +12,7 @@ if (document.querySelector('.slider')) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  buttonOpen.classList.add('main-navigation__toggle--open');
+  menu.classList.remove('main-navigation--no-js');
   menuOpen.classList.add('main-navigation__list--close');
 });
 

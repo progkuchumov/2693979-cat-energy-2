@@ -20,3 +20,12 @@
     background-size: 118px 22px;
   }
 }
+
+.logo:hover,
+.logo:focus {
+  opacity: $opacity-logo-hover;
+}
+
+.logo:active {
+  opacity: $opacity-logo-slider-active;
+}

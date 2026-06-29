@@ -1,6 +1,7 @@
 .header {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding-top: 14px;
@@ -13,5 +14,18 @@
 
   @media (min-width: $max-width-desktop) {
     padding-top: 55px;
+  }
+}
+
+.header__logo {
+  @media (min-width: $max-width-tablet) {
+    flex: 0 0 auto;
+  }
+}
+
+.header__navigation {
+  @media (min-width: $max-width-tablet) {
+    flex: 1;
+    margin-left: 33px;
   }
 }

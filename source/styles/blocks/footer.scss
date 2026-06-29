@@ -35,22 +35,29 @@
 }
 
 .footer__logo {
+  position: relative;
   display: block;
   margin-bottom: 20px;
   width: 128px;
   height: 24px;
 
-  mask-image: url("../../images/logo-text.svg");
-  mask-size: cover;
-  mask-repeat: no-repeat;
-  background-color: $color-dark-grey-1;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    mask-image: url("../../images/logo-text.svg");
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    background-color: $color-dark-grey-1;
+  }
 
-  &:hover,
-  &:focus {
+  &:hover::after,
+  &:focus::after {
     background-color: $color-dark-grey-3;
   }
 
-  &:active {
+  &:active::after {
     background-color: $color-dark-grey-4;
   }
 
@@ -80,10 +87,6 @@
     mask-size: cover;
     mask-repeat: no-repeat;
     background-color: $color-base;
-  }
-
-  &:focus {
-    outline: none;
   }
 
   &:hover::after,

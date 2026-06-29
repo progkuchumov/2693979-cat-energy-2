@@ -24,4 +24,20 @@
     font-size: $font-size-large;
     line-height: $line-height-button-big;
   }
+
+  &:hover,
+  &:focus {
+    background-color: $color-accent-pressed;
+  }
+
+  &:active {
+    color: $color-white-focus;
+  }
+
+  &--accent:hover,
+  &--accent:focus,
+  &--accent:active {
+    background-color: $color-grey-8;
+    color: $color-base;
+  }
 }

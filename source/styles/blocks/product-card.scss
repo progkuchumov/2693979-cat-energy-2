@@ -5,7 +5,7 @@
     "image  title"
     "image  parameters"
     "button button";
-  padding-top: 5px;
+  padding-top: 20px;
 
   @media (min-width: $max-width-tablet) {
     grid-template-columns: 1fr;
@@ -14,8 +14,12 @@
       "title"
       "parameters"
       "button";
-    padding: 12px 37px 40px;
+    padding: 10px 37px 40px;
     justify-items: center;
+  }
+
+  @media (min-width: $max-width-desktop) {
+    padding: 10px 40px 38px;
   }
 }
 
@@ -32,18 +36,19 @@
   height: 107px;
 
   @media (min-width: $max-width-tablet) {
-    margin-bottom: 5px;
+    margin-bottom: 22px;
     width: 200px;
     height: 210px;
+  }
+
+  @media (min-width: $max-width-desktop) {
+    margin-bottom: 13px;
+    width: 169px;
   }
 }
 
 .product-card__image {
-  padding-top: 30px;
-
-  @media (min-width: $max-width-tablet) {
-    padding-top: 0;
-  }
+  display: block;
 }
 
 .product-card__title-link {
@@ -51,7 +56,7 @@
 }
 
 .product-card__title {
-  margin-top: 15px;
+  margin-top: 0;
   margin-bottom: 16px;
   padding-right: 50px;
   font-family: $font-family-accent;
@@ -69,6 +74,22 @@
     line-height: $line-height-large;
     text-align: center;
   }
+
+  @media (min-width: $max-width-desktop) {
+    margin-bottom: 25px;
+  }
+}
+
+.product-card__image-link:hover,
+.product-card__image-link:focus,
+.product-card__title-link:hover,
+.product-card__title-link:focus {
+  opacity: $opacity-hover;
+}
+
+.product-card__image-link:active,
+.product-card__title-link:active {
+  opacity: $opacity-active;
 }
 
 .product-card__parameters {
@@ -82,8 +103,12 @@
   line-height: $line-height-small;
 
   @media (min-width: $max-width-tablet) {
-    margin-bottom: 5px;
+    margin-bottom: 7px;
     width: 100%;
+  }
+
+  @media (min-width: $max-width-desktop) {
+    margin-bottom: 10px;
   }
 }
 
@@ -100,6 +125,11 @@
     line-height: $line-height-medium;
     border-bottom: 1px solid $color-grey-7;
   }
+
+  @media (min-width: $max-width-desktop) {
+    margin-bottom: 6px;
+    padding-bottom: 6px;
+  }
 }
 
 .product-card__parameter-value {
@@ -107,6 +137,6 @@
 }
 
 .product-card__buy-button {
-  margin-top: 20px;
+  margin-top: 18px;
   grid-area: button;
 }

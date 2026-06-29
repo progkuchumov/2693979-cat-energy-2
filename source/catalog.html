@@ -14,7 +14,7 @@
 </head>
 
 <body class="page__body">
-  <header class="header page__container page__container-padding">
+  <header class="header page__container">
     <a class="logo" href="index.html">
       <picture>
         <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-desktop.svg">
@@ -23,18 +23,18 @@
       </picture>
       <span class="visually-hidden">Ссылка на Cat Energy</span>
     </a>
-    <nav class="main-navigation">
+    <nav class="main-navigation main-navigation--no-js">
       <button class="main-navigation__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <ul class="main-navigation__list list-reset" id="js-menu-open">
+      <ul class="main-navigation__list list-reset">
         <li class="main-navigation__item">
-          <a class="main-navigation__link main-navigation__link--current" href="index.html">
+          <a class="main-navigation__link" href="index.html">
             Главная
           </a>
         </li>
         <li class="main-navigation__item">
-          <a class="main-navigation__link" href="catalog.html">
+          <a class="main-navigation__link main-navigation__link--current" href="catalog.html">
             Каталог продукции
           </a>
         </li>
@@ -47,7 +47,7 @@
     </nav>
   </header>
   <main class="page__main">
-    <section class="catalog page__container page__container-padding-catalog">
+    <section class="catalog page__container">
       <h1 class="catalog__title title">Каталог продукции</h1>
       <ul class="catalog__list list-reset">
         <li class="catalog__item product-card">
@@ -202,9 +202,9 @@
     </section>
     <section class="additional-catalog page__container">
       <h2 class="additional-catalog__title title-accent">
-        <span class="title-accent__container">Дополнительные товары</span>
+        Дополнительные товары
       </h2>
-      <div class="page__container-padding">
+      <div class="additional-catalog__container">
         <ul class="additional-catalog__list list-reset">
           <li class="additional-catalog__item additional-product">
             <h3 class="additional-product__title title">Сахарозаменитель</h3>
@@ -239,16 +239,14 @@
             <a class="additional-product__buy-button button" href="buy.html">Заказать</a>
           </li>
         </ul>
-        <div class="promo">
+        <div class="additional-catalog__promo promo">
           <p class="promo__text">Закажите все<br>и получите чехол для кота в подарок!</p>
         </div>
       </div>
     </section>
     <section class="subscription page__container">
-      <h2 class="subscription__title title-accent">
-        <span class="title-accent__container">Акции и новинки</span>
-      </h2>
-      <div class="page__container-padding subscription__container-padding">
+      <h2 class="subscription__title title-accent">Акции и новинки</h2>
+      <div class="subscription__container-padding">
         <p class="subscription__text">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
         <form class="subscription__form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="subscription-email">Ваш email</label>
@@ -258,7 +256,7 @@
       </div>
     </section>
     <section class="contacts contacts--inner-page">
-      <div class="page__container page__container-padding">
+      <div class="page__container">
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__block">
           <p class="contacts__description">Приглашаем<br> к сотрудничеству дилеров!</p>
@@ -269,16 +267,14 @@
         </div>
       </div>
       <div class="contacts__map">
-        <picture>
-          <source media="(min-width: 1440px)" width="1440" height="400" type="image/jpeg" srcset="images/map-desktop@1x.jpg 1x, images/map-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" width="768" height="400" type="image/jpeg" srcset="images/map-tablet@1x.jpg 1x, images/map-tablet@2x.jpg 2x">
-          <img class="contacts__map-images" src="images/map-mobile@1x.jpg" srcset="images/map-mobile@2x.jpg 2x" width="320" height="362" alt="Карта расположения Cat Energy">
-        </picture>
+        <div class="contacts__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991047846956!2d30.32050837756397!3d59.93879417491517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0xa24b26c0d196de71!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1782507037736!5m2!1sru!2sru" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
       </div>
     </section>
   </main>
   <footer class="footer">
-    <div class="footer__container page__container page__container-padding">
+    <div class="footer__container page__container">
       <a class="footer__logo" href="index.html">
         <span class="visually-hidden">Ссылка на Cat Energy</span>
       </a>

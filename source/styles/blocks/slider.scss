@@ -49,7 +49,7 @@
   &:active {
     & + .slider__range-visible {
       color: $color-accent-pressed;
-      opacity: 0.6;
+      opacity: $opacity-logo-slider-active;
     }
   }
 }

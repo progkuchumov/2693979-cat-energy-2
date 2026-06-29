@@ -6,8 +6,8 @@ $container-padding-mobile: 0 20px;
 $container-padding-tablet: 0 30px;
 $container-padding-desktop: 0 110px;
 
-$font-family-primary: "Lato", sans-serif;
-$font-family-accent: "Oswald", sans-serif;
+$font-family-primary: "Lato", "Tahoma", sans-serif;
+$font-family-accent: "Oswald", "Arial", sans-serif;
 
 $font-size-small: 12px;
 $font-size-base: 14px;
@@ -19,6 +19,7 @@ $font-size-large-accent: 30px;
 $font-size-tablet-extra-large: 60px;
 $font-size-title: 36px;
 $font-size-title-accent: 32px;
+$font-size-title-desktop-accent: 40px;
 $font-size-mega-large: 280px;
 
 $line-height-result: 12px;
@@ -40,6 +41,7 @@ $color-accent-pressed: #5eaa2f;
 $color-bg-accent: rgba(104, 183, 56, 0.85);
 $color-black: #000000;
 $color-white: #ffffff;
+$color-white-focus: rgba(255, 255, 255, 0.3);
 $color-grey-1: #f2f2f2;
 $color-grey-2: #eaeaea;
 $color-grey-3: #666666;
@@ -48,9 +50,16 @@ $color-grey-5: #e6e6e6;
 $color-grey-6: #d9d9d9;
 $color-grey-7: #cdcdcd;
 $color-grey-8: #ebebeb;
+$color-grey-9: #e7e7e7;
 $color-dark-grey-1: #111111;
 $color-dark-grey-2: #222222;
 $color-dark-grey-3: #3e3e3e;
 $color-dark-grey-4: #6b6b6b;
+$color-hero-grey-left: #4e4d52;
+$color-hero-grey-right: #454348;
+$error: #ff8282;
 
+$opacity-hover: 0.6;
+$opacity-logo-hover: 0.8;
 $opacity-active: 0.3;
+$opacity-logo-slider-active: 0.6;

@@ -3,14 +3,16 @@
   min-height: 290px;
   text-align: center;
 
-  /* добавить "отзывчивый" фон */
   background:
     linear-gradient($color-bg-accent, $color-bg-accent),
-    url("../../images/promo-bg-mobile@1x.jpg")
+    image-set(
+      url("../../images/promo-bg-mobile@1x.jpg") 1x,
+      url("../../images/promo-bg-mobile@2x.jpg") 2x
+    )
     top center no-repeat;
   background-size: cover;
 
-  @media (min-width: $max-width-tablet) {
+  @media (min-width: $max-width-tablet) and (max-width: calc($max-width-desktop - 1px)) {
     display: flex;
     align-items: center;
     padding: 57px 125px 60px 77px;
@@ -18,7 +20,25 @@
     text-align: left;
     background:
       linear-gradient($color-bg-accent, $color-bg-accent),
-      url("../../images/promo-bg-tablet@1x.jpg")
+      image-set(
+        url("../../images/promo-bg-tablet@1x.jpg") 1x,
+        url("../../images/promo-bg-tablet@2x.jpg") 2x
+      )
+      top center no-repeat;
+  }
+
+  @media (min-width: $max-width-desktop) {
+    padding-left: 42px;
+    padding-right: 42px;
+    width: 245px;
+    min-height: 288px;
+
+    background:
+      linear-gradient($color-bg-accent, $color-bg-accent),
+      image-set(
+        url("../../images/promo-bg-desktop@1x.jpg") 1x,
+        url("../../images/promo-bg-desktop@2x.jpg") 2x
+      )
       top center no-repeat;
   }
 
@@ -33,7 +53,7 @@
     background-repeat: no-repeat;
     background-position: center center;
 
-    @media (min-width: $max-width-tablet) {
+    @media (min-width: $max-width-tablet) and (max-width: calc($max-width-desktop - 1px)) {
       position: absolute;
       margin: 0;
     }
@@ -48,7 +68,7 @@
   color: $color-white;
   line-height: $line-height-medium;
 
-  @media (min-width: $max-width-tablet) {
+  @media (min-width: $max-width-tablet) and (max-width: calc($max-width-desktop - 1px)) {
     margin-left: auto;
     width: 165px;
   }
